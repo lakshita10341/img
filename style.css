@@ -193,6 +193,7 @@ margin-top: 2rem;
     width: 80%;
     margin: 0 auto;
     padding-top: 2rem;
+    padding-bottom: 0.5rem;
    
 }
 
@@ -204,8 +205,8 @@ margin-top: 2rem;
     h2{
         width: 80%;
         margin:0 auto; 
-        padding-top: 2rem;
-       
+        padding-top: 4rem;
+        padding-bottom: 0.5rem;
     }
 }
 
@@ -213,7 +214,7 @@ margin-top: 2rem;
 .half{
   width:80%;
   margin: 0 auto;
-   margin-top: 1rem;
+   margin-top: 1.5rem;
    display: flex;
    flex-direction: row;
    justify-content: space-between; 
@@ -279,6 +280,8 @@ margin-top: 2rem;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center; 
+    transform: scale(1.2); 
+    background-color: white;
 }
 
 .img2{
@@ -300,7 +303,8 @@ margin-top: 2rem;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
-
+    transform: scale(1.2); 
+    background-color: white;
 }
 .img3{
     
@@ -317,6 +321,8 @@ margin-top: 2rem;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
+    transform: scale(1.2); 
+    background-color: white;
 }
 .img4{
     
@@ -327,12 +333,15 @@ margin-top: 2rem;
     background-position: center;
    
     transition: background 0.3s ease-in-out;
+
 }
 .img4:hover{
     width: 12rem;
     height: 16rem;
     background: url(Cdev_one.png);
     background-size: cover;
+    transform: scale(1.2); 
+    background-color: white;
 }
 .img5{
     
@@ -343,13 +352,15 @@ margin-top: 2rem;
     background-repeat: no-repeat; 
     background-position: center;
     transition: background 0.3s ease-in-out;
-
+   
 }
 .img5:hover{
     background: url(Cdev_two.png);
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
+    transform: scale(1.2); 
+    background-color: white;
 }
 .img6{
     
@@ -357,12 +368,18 @@ margin-top: 2rem;
     height: 16rem;
     background: url(dev_three.png);
     background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
     transition: background 0.3s ease-in-out;
 }
 
 .img6:hover{
     background: url(Cdev_three.png);
     background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    transform: scale(1.2); 
+    background-color: white;
   
 }
 
