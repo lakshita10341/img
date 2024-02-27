@@ -2,15 +2,12 @@
 *{
     margin:0;
     padding: 0;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+   
     border: border-box;
     font-family: sans-serif;
   
 }
-/* body{
-    width: 80%;
-    margin: 0 auto;
-} */
+
 a{
     text-decoration: none;
     color: black;
@@ -19,8 +16,7 @@ Header{
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
+ 
     
     width: 80%;
     margin: 0 auto;
@@ -28,6 +24,10 @@ Header{
     img{
         height: 4rem;
     }
+}
+.hamburger{
+    display: none;
+   
 }
 .items{
     
@@ -53,6 +53,9 @@ Header{
     font-size: 1rem;
     padding:0.1rem;
 }
+.searchbar{
+    padding-top: 0.5rem;
+}
 .intro{
     height: 15rem;
    
@@ -69,25 +72,15 @@ Header{
    
     .part1{
         padding-bottom: 6rem;
+        font-weight: bold;
     }
   
+    h2{
+        padding-top: 1rem;
+        padding-bottom: 1rem; 
+    }
 }
 
-.content{
-margin-top: 2rem;
-/* padding-left: 4rem;
-padding-right: 4rem; */
-
-}
-.one{
-    width: 80%;
-    margin: 0 auto;
-}
-.two{
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 2rem;
-}
 .colorL{
     display: inline-block;
     padding-left: 0.2rem;
@@ -115,28 +108,95 @@ width: 80%;
     }
 }
 
-.hamburger{
+
+.h_LI{
     display: none;
 }
-/* .content{ 
-h2{
-    width: 80%;
-    margin:0 auto;
-}
-} */
 
-/* background: #D9D9D9; */
-.three{
-    h2{
-        width: 80%;
-        margin:0 auto; 
-        padding-top: 1rem;
+
+/* responsiveness */
+
+
+@media screen and (max-width: 768px){
+    .navbar{
+        display:none;
+
     }
+    .items {
+        display: none;
+    }
+    .hamburger{
+       
+        display: block;
+        cursor: pointer;
+        position: absolute; 
+        top: 2rem; 
+        LEFT: 0rem;
+        z-index: 1000; 
+       
+   .h_icon {i{ 
+    padding-left: 1rem;}
+   }
+
+    }
+
+
+
+    .h_icon:hover .h_LI {
+        display: flex;
+        flex-direction: column;
+       background-color: white;
+      margin-top: 1rem;
+     
+        padding-right: 2rem;
+        z-index: 1;
+        p{
+            padding: 0.5rem;
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+            .part{
+                text-align: left;
+            }
+        }
+    }
+  
+ 
 }
+
+
+/* content */
+.content{
+margin-top: 2rem;
+
+}
+.one{
+    width: 80%;
+    margin: 0 auto;
+}
+.two{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+   
+}
+
+
+
 .three{
     display:flex;
     flex-direction: column;
+    h2{
+        width: 80%;
+        margin:0 auto; 
+        padding-top: 2rem;
+       
+    }
 }
+
 
 .half{
   width:80%;
@@ -144,9 +204,7 @@ h2{
    margin-top: 1rem;
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
-  
-   
+   justify-content: space-between; 
 }
 
 
@@ -172,6 +230,12 @@ h2{
         display: flex;
         justify-content: center;
     }
+
+    p{
+        padding: 0.5rem;
+        text-align: center;
+    }
+
     i{
       
        
@@ -185,11 +249,6 @@ h2{
         margin:0 auto;
     }
 }
-.member p{
-    padding: 0.5rem;
-    text-align: center;
-}
-/* image 17 */
 
 .img1{
   
@@ -197,15 +256,15 @@ h2{
     height: 16rem;
     background: url(one.png);
     /* background-size: cover; */
-    background-size: contain; /* Change to 'contain' to maintain aspect ratio */
-    background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
+    background-size: contain; 
+    background-repeat: no-repeat; 
     background-position: center;
     transition: background 0.3s ease-in-out;
 }
 
 .img1:hover{
     background: url(Cone.png);
-    background-size: contain; /* Change to 'contain' to maintain aspect ratio */
+    background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center; 
 }
@@ -216,7 +275,7 @@ h2{
     height: 16rem;
    
     
-    background-size: contain; /* Change to 'contain' to maintain aspect ratio */
+    background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
    
@@ -226,7 +285,7 @@ h2{
     background: url('Ctwo.png');
     width: 12rem;
     height: 16rem;
-    background-size: contain; /* Change to 'contain' to maintain aspect ratio */
+    background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
 
@@ -236,14 +295,14 @@ h2{
     width: 12rem;
     height: 16rem;
     background: url(three.png);
-    background-size: contain; /* Change to 'contain' to maintain aspect ratio */
+    background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
 }
 
 .img3:hover{
     background: url(Cthree.png);
-    background-size: contain; /* Change to 'contain' to maintain aspect ratio */
+    background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
 }
@@ -254,27 +313,21 @@ h2{
     background: url(dev_one.png);
     background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; 
-    background-position: center; */
-    /* background-size: contain; Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center; */
+   
     transition: background 0.3s ease-in-out;
 }
 .img4:hover{
     width: 12rem;
     height: 16rem;
     background: url(Cdev_one.png);
-    background-size: cover; /* Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center; */
+    background-size: cover;
 }
 .img5{
     
     width: 12rem;
     height: 16rem;
     background: url(dev_two.png);
-    background-size: contain; /* Change to 'contain' to maintain aspect ratio */
+    background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
     transition: background 0.3s ease-in-out;
@@ -282,7 +335,7 @@ h2{
 }
 .img5:hover{
     background: url(Cdev_two.png);
-    background-size: contain; /* Change to 'contain' to maintain aspect ratio */
+    background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
 }
@@ -291,74 +344,16 @@ h2{
     width: 12rem;
     height: 16rem;
     background: url(dev_three.png);
-    background-size: cover; /* Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center; */
+    background-size: cover; 
     transition: background 0.3s ease-in-out;
 }
 
 .img6:hover{
     background: url(Cdev_three.png);
-    background-size: cover; /* Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center; */
+    background-size: cover;
   
 }
-.img7{
-    
-    width: 12rem;
-    height: 16rem;
-    background: url(dev_one.png);
-    /* background-size: contain; /* Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center;  */
-    background-size: cover;
-    transition: background 0.3s ease-in-out;
 
-}
-.img7:hover{
-    background: url(Cdev_one.png);
-    background-size: cover; /* Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center; */
-   
-}
-.img8{
-    
-    width: 12rem;
-    height: 16rem;
-    background: url(dev_two.png);
-    background-size: cover; /* Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center; */
-    transition: background 0.3s ease-in-out;
-
-}
-.img8:hover{
-    background: url(Cdev_two.png);
-    background-size: cover; /* Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center; */
-   
-}
-.img9{
-    padding: 0.2rem;
-    width: 12rem;
-    height: 16rem;
-    background: url(dev_three.png);
-    background-size: cover; /* Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center; */
-    transition: background 0.3s ease-in-out;
-
-}
-.img9:hover{
-    background: url(Cdev_three.png);
-    background-size: cover; /* Change to 'contain' to maintain aspect ratio */
-    /* background-repeat: no-repeat; 
-    background-position: center; */
-   
-}
 /* footer */
 footer{
     padding-top: 5rem;
@@ -377,6 +372,7 @@ a{
 }
 }
 .col1{
+    padding-right: 2rem;
  img{
     height: 5rem;
     width: 6rem;
@@ -390,6 +386,7 @@ a{
 }
 
 .col2{
+    padding-right: 2rem;
     h3{
         padding: 0.2rem;
     }
@@ -400,6 +397,7 @@ a{
 
 
 .col3{
+    padding-right: 2rem;
     a{
         padding:0.2rem;
     }
@@ -425,7 +423,7 @@ a{
     padding-bottom: 0.5rem;
     background-color: aquamarine;
     span{
-        padding: 0.8rem;
+        padding-right: 0.8rem;
     }
     .in{
         width: 80%;
@@ -440,62 +438,7 @@ a{
         margin:0 auto;
     }
 }
-.h_LI{
-    display: none;
-}
 
 
 
-
-
-@media screen and (max-width: 768px){
-    .navbar{
-        display:none;
-
-    }
-    .items {
-        display: none;
-    }
-    .hamburger{
-        /* display: block;
-      Z-INDEX: 1000;
-        cursor: pointer; */
-      
-
-        display: block;
-        cursor: pointer;
-        position: absolute; /* Position hamburger menu absolutely */
-        top: 2rem; /* Position it at the top of the header */
-        LEFT: 1rem; /* Adjust as needed */
-        z-index: 1000; 
-        background-color: white;
-       
-      
-
-    }
-
-
-
-    .h_icon:hover .h_LI {
-        display: flex;
-        flex-direction: column;
-        /* padding: 2rem; */
-        padding-right: 2rem;
-        z-index: 1;
-        p{
-            padding: 0.5rem;
-        }
-
-        .items{
-            display: flex;
-            flex-direction: column;
-            padding: 0.5rem;
-            .part{
-                text-align: left;
-            }
-        }
-    }
-  
- 
-}
 
