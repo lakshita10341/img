@@ -72,7 +72,19 @@ Header{
    
     .part1{
         padding-bottom: 6rem;
+       
         font-weight: bold;
+
+        p{padding-right: 1rem;
+            display: inline-block;
+           
+        }
+        span{
+            font-weight: lighter;
+            font-size: 0.8rem;
+        }
+
+
     }
   
     h2{
