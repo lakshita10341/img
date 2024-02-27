@@ -39,6 +39,36 @@ Header{
    
    text-align: end;
 }
+.dropdown p:hover {
+   
+    background-color: rgb(242, 236, 236);
+    
+}
+
+.dropdown-content {
+    display: none;
+  
+ 
+    /* margin-top: 0.5rem; */
+   background-color: rgb(242, 236, 236);
+    z-index: 1;
+    a{
+        padding: 0.2rem;
+    width: 10rem;
+    }
+    
+   
+}
+.navbar{ 
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 8.7rem;
+}
+}
+
 #small{
     font-size: 0.8rem;
     padding:0.1rem;
@@ -60,7 +90,7 @@ Header{
     background-color :#1186d4;
     color:  white;
     
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 .introin{
     width: 80%;
@@ -111,10 +141,13 @@ Header{
     justify-content: space-between;
 width: 80%;
     margin: 0 auto;
-    margin-top:2rem;
+    margin-top:1rem;
+    overflow: hidden;
+   
 
     p{
         display: inline;
+        padding: 0.2rem;
     }
 }
 
@@ -142,9 +175,10 @@ width: 80%;
         position: absolute; 
         top: 2rem; 
         LEFT: 0rem;
-        z-index: 1000; 
+        z-index: 1; 
        
-   .h_icon {i{ 
+   .h_icon {
+    i{ 
     padding-left: 1rem;}
    }
 
@@ -157,12 +191,27 @@ width: 80%;
         flex-direction: column;
        background-color: white;
       margin-top: 1rem;
+      padding-right: 2rem;
      
-        padding-right: 2rem;
         z-index: 1;
         p{
+           
             padding: 0.5rem;
+          
         }
+.dropdown{
+    display: flex;
+}
+
+        .dropdown:hover .dropdown-content{
+            display: flex;
+            flex-direction: column;
+        
+            position: absolute;
+            /* position: relative; */
+            left:10rem;
+        }
+
 
         .items{
             display: flex;
