@@ -118,7 +118,7 @@ Header{
             font-size: 0.8rem;
         }
 
-
+        
     }
   
     h2{
@@ -163,74 +163,6 @@ width: 80%;
 }
 
 
-/* responsiveness */
-
-
-@media screen and (max-width: 768px){
-    .navbar{
-        display:none;
-
-    }
-    .items {
-        display: none;
-    }
-    .hamburger{
-       
-        display: block;
-        cursor: pointer;
-        position: absolute; 
-        top: 2rem; 
-        LEFT: 0rem;
-        z-index: 1; 
-       
-   .h_icon {
-    i{ 
-    padding-left: 1rem;}
-   }
-
-    }
-
-
-
-    .h_icon:hover .h_LI {
-        display: flex;
-        flex-direction: column;
-       background-color: white;
-      margin-top: 1rem;
-      padding-right: 2rem;
-     
-        z-index: 1;
-        p{
-           
-            padding: 0.5rem;
-          
-        }
-.dropdown{
-    display: flex;
-}
-
-        .dropdown:hover .dropdown-content{
-            display: flex;
-            flex-direction: column;
-        
-            position: absolute;
-            /* position: relative; */
-            left:10rem;
-        }
-
-
-        .items{
-            display: flex;
-            flex-direction: column;
-            padding: 0.5rem;
-            .part{
-                text-align: left;
-            }
-        }
-    }
-  
- 
-}
 
 
 /* content */
@@ -321,7 +253,7 @@ margin-top: 2rem;
 }
 
 .img1{
-  
+    margin: 0 auto;
     width: 12rem;
     height: 16rem;
     background: url(one.png);
@@ -346,7 +278,7 @@ margin-top: 2rem;
     width: 12rem;
     height: 16rem;
    
-    
+    margin: 0 auto;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
@@ -371,6 +303,7 @@ margin-top: 2rem;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
+    margin: 0 auto;
 }
 
 .img3:hover{
@@ -390,7 +323,7 @@ margin-top: 2rem;
     background-position: center;
    
     transition: background 0.3s ease-in-out;
-
+    margin: 0 auto;
 }
 .img4:hover{
     width: 12rem;
@@ -409,7 +342,7 @@ margin-top: 2rem;
     background-repeat: no-repeat; 
     background-position: center;
     transition: background 0.3s ease-in-out;
-   
+    margin: 0 auto;
 }
 .img5:hover{
     background: url(Cdev_two.png);
@@ -418,9 +351,10 @@ margin-top: 2rem;
     background-position: center;
     transform: scale(1.2); 
     background-color: white;
+    
 }
 .img6{
-    
+    margin: 0 auto;
     width: 12rem;
     height: 16rem;
     background: url(dev_three.png);
@@ -428,6 +362,7 @@ margin-top: 2rem;
     background-repeat: no-repeat; 
     background-position: center;
     transition: background 0.3s ease-in-out;
+    
 }
 
 .img6:hover{
@@ -437,7 +372,7 @@ margin-top: 2rem;
     background-position: center;
     transform: scale(1.2); 
     background-color: white;
-  
+    
 }
 
 /* footer */
@@ -527,4 +462,97 @@ a{
 
 
 
+/* responsiveness */
+
+
+@media screen and (max-width: 768px){
+    .navbar{
+        display:none;
+
+    }
+    .items {
+        display: none;
+    }
+    .hamburger{
+       
+        display: block;
+        cursor: pointer;
+        position: absolute; 
+        top: 2rem; 
+        LEFT: 0rem;
+        z-index: 1; 
+       
+   .h_icon {
+    i{ 
+    padding-left: 1rem;}
+   }
+
+    }
+
+.half{
+    display: flex;
+    flex-direction: column;
+
+width: 100%;
+
+}
+.member{
+   
+   
+position: relative;
+
+}
+.background{
+    display: none;
+}
+.mbg{
+    background-color: #1186d4;
+    width: 100vw;
+    height: 8rem;
+    z-index:-1;
+   position: absolute;
+    bottom: 5.5rem;
+}
+
+
+
+    .h_icon:hover .h_LI {
+        display: flex;
+        flex-direction: column;
+       background-color: white;
+      margin-top: 1rem;
+      padding-right: 2rem;
+     
+        z-index: 1;
+        p{
+           
+            padding: 0.5rem;
+          
+        }
+.dropdown{
+    display: flex;
+}
+
+        .dropdown:hover .dropdown-content{
+            display: flex;
+            flex-direction: column;
+        
+            position: absolute;
+            /* position: relative; */
+            left:10rem;
+        }
+
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+            .part{
+                text-align: left;
+            }
+        }
+    }
+  
+ 
+}
 
