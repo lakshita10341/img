@@ -2,7 +2,7 @@
 *{
     margin:0;
     padding: 0;
-   
+  
     border: border-box;
 }
 
@@ -94,12 +94,18 @@ Header{
 }
 .introin{
     width: 80%;
+    height: 80%;
     margin: 0 auto;
- 
-    padding-top: 2rem;
+   
+    
+    padding-top: 2rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
    
     .part1{
-        padding-bottom: 6rem;
+       
        
         font-weight: bold;
 
@@ -265,6 +271,7 @@ margin-top: 2rem;
    display: flex;
    flex-direction: row;
    justify-content: space-between; 
+ 
 }
 
 
@@ -282,6 +289,9 @@ margin-top: 2rem;
  
 }
 .member{
+
+
+
     h3{
         padding: 0.2rem;
         text-align: center;
