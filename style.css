@@ -1,10 +1,16 @@
 
+
+
+
 *{
     margin:0;
     padding: 0;
-  
+
     border: border-box;
 }
+
+
+
 
 a{
     text-decoration: none;
@@ -20,7 +26,8 @@ Header{
     margin: 0 auto;
 
     img{
-        height: 4rem;
+        height: 3.75rem;
+        width: 27rem;
     }
 }
 .hamburger{
@@ -86,8 +93,8 @@ Header{
 }
 .intro{
     height: 15rem;
-   
-    background-color :#1186d4;
+    
+    background-color:#5183B8;
     color:  white;
     
     margin-top: 0.5rem;
@@ -111,6 +118,7 @@ Header{
 
         p{padding-right: 1rem;
             display: inline-block;
+            font-family: "Noto Sans", sans-serif;
            
         }
         span{
@@ -124,6 +132,7 @@ Header{
     h2{
         padding-top: 1rem;
         padding-bottom: 1rem; 
+        font-family: "Lato", sans-serif;
     }
 }
 
@@ -131,7 +140,7 @@ Header{
     display: inline-block;
     padding-left: 0.2rem;
     padding-right: 0.2rem;
-    border: 1px solid #1186d4;
+    border:1px solid #5183B8;
     margin-right: 0.1rem;
 }
 
@@ -139,7 +148,7 @@ Header{
     display: inline-block;
     padding-left: 0.2rem;
     padding-right: 0.2rem;
-    background-color: #1186d4;
+    background-color:#5183B8;
 }
 
 .navbar{
@@ -148,8 +157,9 @@ Header{
 width: 80%;
     margin: 0 auto;
     margin-top:1rem;
-    overflow: hidden;
-   
+  
+   color: #232323;
+   ;
 
     p{
         display: inline;
@@ -168,31 +178,37 @@ width: 80%;
 /* content */
 .content{
 margin-top: 2rem;
+ font-family: "Noto Sans", sans-serif;
+ font-weight: 400;
+ h2{
+    width: 80%;
+    margin:0 auto; 
+    padding-top: 2rem;
+    color:#4C4C4C;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 0.5rem;
+}
 
 }
 .one{
     width: 80%;
     margin: 0 auto;
 }
-.two{
+/* .two{
     width: 80%;
     margin: 0 auto;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
    
-}
+} */
 
 
 
 .three{
     display:flex;
     flex-direction: column;
-    h2{
-        width: 80%;
-        margin:0 auto; 
-        padding-top: 4rem;
-        padding-bottom: 0.5rem;
-    }
+ 
 }
 
 
@@ -212,21 +228,29 @@ margin-top: 2rem;
 }
 
 .background{
-    background-color: #1186d4;
+    background-color:#5183B8;
     z-index: -1;
     position: absolute;
-   bottom: 5.5rem;
-    height: 9rem;
+   bottom: 6.4rem;
+    height: 13.438rem;
     width: 100vw;
  
 }
 .member{
+.pos{
+    color: #666666;
 
+}
 
 
     h3{
         padding: 0.2rem;
         text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        color: #232323;
+        padding-top: 0.8rem;
+        
     }
     .icons{
         display: flex;
@@ -239,23 +263,23 @@ margin-top: 2rem;
     }
 
     i{
-      
+      color: #D2D7D3;
        
         padding:0.2rem;
     }
     hr{
        border:none;
-       background-color: yellow;
-        height:0.2rem;
-        width: 60%;
+       background-color: #FFD53D;
+        height: 0.25rem;
+        width: 8.313rem;
         margin:0 auto;
     }
 }
 
 .img1{
     margin: 0 auto;
-    width: 12rem;
-    height: 16rem;
+    width: 17.875rem;
+    height: 21rem;
     background: url(one.png);
     /* background-size: cover; */
     background-size: contain; 
@@ -269,14 +293,13 @@ margin-top: 2rem;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center; 
-    transform: scale(1.2); 
-    background-color: white;
+   
 }
 
 .img2{
     background: url('two.png');
-    width: 12rem;
-    height: 16rem;
+    width: 13.75rem;
+    height: 21rem;
    
     margin: 0 auto;
     background-size: contain; 
@@ -287,18 +310,17 @@ margin-top: 2rem;
 }
 .img2:hover{
     background: url('Ctwo.png');
-    width: 12rem;
-    height: 16rem;
+    width: 17.875rem;
+    height: 21rem;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
-    transform: scale(1.2); 
-    background-color: white;
+  
 }
 .img3{
     
-    width: 12rem;
-    height: 16rem;
+    width: 17.875rem;
+    height: 21rem;
     background: url(three.png);
     background-size: contain; 
     background-repeat: no-repeat; 
@@ -311,32 +333,30 @@ margin-top: 2rem;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
-    transform: scale(1.2); 
-    background-color: white;
+  
 }
 .img4{
     
-    width: 12rem;
-    height: 16rem;
+    width: 20.563rem;
+    height: 24.313rem;
     background: url(dev_one.png);
     background-size: cover;
+    background-repeat: no-repeat; 
     background-position: center;
    
     transition: background 0.3s ease-in-out;
     margin: 0 auto;
 }
 .img4:hover{
-    width: 12rem;
-    height: 16rem;
+  
     background: url(Cdev_one.png);
     background-size: cover;
-    transform: scale(1.2); 
-    background-color: white;
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 .img5{
-    
-    width: 12rem;
-    height: 16rem;
+    width: 20.563rem;
+    height: 24.313rem;
     background: url(dev_two.png);
     background-size: contain; 
     background-repeat: no-repeat; 
@@ -349,14 +369,13 @@ margin-top: 2rem;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
-    transform: scale(1.2); 
-    background-color: white;
+   
     
 }
 .img6{
     margin: 0 auto;
-    width: 12rem;
-    height: 16rem;
+    width: 20.563rem;
+    height: 24.313rem;
     background: url(dev_three.png);
     background-size: cover; 
     background-repeat: no-repeat; 
@@ -370,8 +389,7 @@ margin-top: 2rem;
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center;
-    transform: scale(1.2); 
-    background-color: white;
+  
     
 }
 
@@ -388,6 +406,7 @@ font-size: 0.9rem;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+    font-family: 'Noto Sans',sans-serif;
 a{
     display: block;
 }
@@ -400,9 +419,16 @@ a{
  }
  .add{
     padding: 0.2rem;
+    
  }
+
+i{
+    color: #0067B3;
+    padding-right: 0.1rem;
+}
  p{
     padding: 0.2rem;
+  
  }
 }
 
@@ -413,6 +439,7 @@ a{
     }
     p{
         padding: 0.2rem;
+       
     }
 }
 
@@ -465,6 +492,21 @@ a{
 /* responsiveness */
 
 
+
+
+@media  screen and (max-width: 1280px) {
+
+    .navbar{
+        font-size: 0.6rem;
+    }
+    header{
+        img{
+            width: 20rem;
+        }
+    }
+}
+
+
 @media screen and (max-width: 768px){
     .navbar{
         display:none;
@@ -506,12 +548,12 @@ position: relative;
     display: none;
 }
 .mbg{
-    background-color: #1186d4;
+    background-color:#5183B8;
     width: 100vw;
-    height: 8rem;
+    height: 13.438rem;
     z-index:-1;
    position: absolute;
-    bottom: 5.5rem;
+    bottom: 6.4rem;
 }
 
 
@@ -553,6 +595,8 @@ position: relative;
         }
     }
   
- 
+ .columns{
+    flex-wrap: wrap;
+ }
 }
 
